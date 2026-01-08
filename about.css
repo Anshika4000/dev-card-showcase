@@ -948,14 +948,20 @@ body.light-mode .nav-logo {
   }
 }
 
-
-
-
 .social-links a[aria-label="Instagram"]:hover { color: #e1306c; }
 .social-links a[aria-label="Facebook"]:hover { color: #1877f2; }
 .social-links a[aria-label="LinkedIn"]:hover { color: #0a66c2; }
 .social-links a[aria-label="GitHub"]:hover { color: #fff; }
 .social-links a[aria-label="Twitter"]:hover { color: #1da1f2; }
 
+/* 🔥 FORCE FIX FOR FEEDBACK TEXTAREA */
+#add-testimonial .testimonial-form textarea {
+  min-height: 140px !important;
+  height: auto !important;
+  resize: vertical;
+  line-height: 1.6;
+  display: block;
+  box-sizing: border-box;
+}
 
 
