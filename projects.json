@@ -1502,6 +1502,24 @@
     "name": "PavanKarthik",
     "github": "https://github.com/pavanakarthik12"
   }
+},
+{
+  "title": "Healthy Screen Time & Digital Balance 🧘‍♂️",
+  "description": "An awareness page that educates users about healthy screen-time habits and maintaining digital balance.",
+  "tags": [
+    "HTML",
+    "CSS",
+    "Awareness",
+    "Digital Wellbeing",
+    "Health"
+  ],
+  "links": {
+    "live": "./projects/healthy-screen-time-awareness/index.html"
+  },
+  "author": {
+    "name": "Sneha Amballa",
+    "github": "https://github.com/your-github-username"
+  }
 }
 
 ]
