@@ -1520,6 +1520,17 @@
   }
 },
 {
+  "title": "Study Breaks & Focus Techniques 🧠",
+  "description": "A practical guide that teaches effective study breaks and focus techniques to improve learning efficiency.",
+  "tags": [
+    "HTML",
+    "CSS",
+    "Productivity",
+    "Study Tips",
+    "Student Wellness"
+  ],
+  "links": {
+    "live": "./projects/study-breaks-focus-guide/index.html"
   "title": "Healthy Screen Time & Digital Balance 🧘‍♂️",
   "description": "An awareness page that educates users about healthy screen-time habits and maintaining digital balance.",
   "tags": [
