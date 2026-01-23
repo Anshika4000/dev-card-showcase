@@ -1,59 +1,91 @@
 const game = document.querySelector(".game");
-const bird = document.getElementById("bird");
+const cloud = document.querySelector(".cloud");
 const scoreEl = document.getElementById("score");
-const message = document.getElementById("message");
 
-let birdTop = 200;
-let gravity = 2;
-let jump = -30;
+const overlay = document.getElementById("message");
+const startBtn = document.getElementById("startBtn");
+const restartBtn = document.getElementById("restartBtn");
+const title = document.getElementById("title");
+const subtitle = document.getElementById("subtitle");
+
+let gameStarted = false;
 let gameOver = false;
 let score = 0;
 
-document.addEventListener("keydown", e => {
-  if (e.code === "Space") fly();
+/* Game size */
+let gameHeight = window.innerHeight;
+let gameWidth = window.innerWidth;
+
+/* Cloud physics */
+let cloudTop = gameHeight / 2 - 20; // CENTER CLOUD
+let gravity = 2;
+let jumpUp = -30;
+let jumpDown = 20;
+
+/* Apply initial position */
+cloud.style.top = cloudTop + "px";
+
+/* ---------------- START GAME ---------------- */
+startBtn.addEventListener("click", () => {
+  overlay.style.display = "none";
+  gameStarted = true;
 });
 
-game.addEventListener("click", fly);
+/* ---------------- CONTROLS ---------------- */
+document.addEventListener("keydown", (e) => {
+  if (!gameStarted || gameOver) return;
 
-function fly() {
-  if (gameOver) return;
-  birdTop += jump;
-  bird.style.top = birdTop + "px";
-  message.style.display = "none";
-}
+  if (e.code === "ArrowUp") cloudTop += jumpUp;
+  if (e.code === "ArrowDown") cloudTop += jumpDown;
 
-/* Gravity */
+  cloud.style.top = cloudTop + "px";
+});
+
+game.addEventListener("click", () => {
+  if (!gameStarted || gameOver) return;
+  cloudTop += jumpUp;
+  cloud.style.top = cloudTop + "px";
+});
+
+/* ---------------- GRAVITY ---------------- */
 setInterval(() => {
-  if (gameOver) return;
-  birdTop += gravity;
-  bird.style.top = birdTop + "px";
+  if (!gameStarted || gameOver) return;
 
-  if (birdTop <= 0 || birdTop >= 490) endGame();
+  cloudTop += gravity;
+  cloud.style.top = cloudTop + "px";
+
+  if (cloudTop <= 0 || cloudTop >= gameHeight - 50) {
+    endGame();
+  }
 }, 20);
 
-/* Create Pipes */
+/* ---------------- CREATE PIPES ---------------- */
 function createPipe() {
-  if (gameOver) return;
+  if (!gameStarted || gameOver) return;
 
-  const gap = 140;
-  const pipeTopHeight = Math.floor(Math.random() * 200) + 50;
+  const gap = 260; // bigger gap = better UX
+  const minHeight = 120;
+  const pipeTopHeight =
+    Math.floor(Math.random() * (gameHeight - gap - 300)) + minHeight;
 
   const topPipe = document.createElement("div");
   const bottomPipe = document.createElement("div");
 
-  topPipe.classList.add("pipe", "top");
-  bottomPipe.classList.add("pipe", "bottom");
+  topPipe.className = "pipe top";
+  bottomPipe.className = "pipe bottom";
 
   topPipe.style.height = pipeTopHeight + "px";
-  bottomPipe.style.height = 520 - pipeTopHeight - gap + "px";
+  bottomPipe.style.height =
+    gameHeight - pipeTopHeight - gap + "px";
 
-  topPipe.style.left = "360px";
-  bottomPipe.style.left = "360px";
+  topPipe.style.left = gameWidth + "px";
+  bottomPipe.style.left = gameWidth + "px";
 
   game.appendChild(topPipe);
   game.appendChild(bottomPipe);
 
-  let pipeX = 360;
+  let pipeX = gameWidth;
+  let scored = false;
 
   const movePipe = setInterval(() => {
     if (gameOver) {
@@ -61,26 +93,29 @@ function createPipe() {
       return;
     }
 
-    pipeX -= 2;
+    pipeX -= 3;
     topPipe.style.left = pipeX + "px";
     bottomPipe.style.left = pipeX + "px";
 
-    // Score
-    if (pipeX === 70) {
+    /* SCORE (only once per pipe) */
+    if (!scored && pipeX + 70 < 70) {
       score++;
       scoreEl.textContent = score;
+      scored = true;
     }
 
-    // Collision
+    /* COLLISION */
     if (
-      pipeX < 110 && pipeX > 30 &&
-      (birdTop < pipeTopHeight || birdTop > pipeTopHeight + gap)
+      pipeX < 140 &&
+      pipeX > 30 &&
+      (cloudTop < pipeTopHeight ||
+        cloudTop > pipeTopHeight + gap)
     ) {
       endGame();
     }
 
-    // Remove pipes
-    if (pipeX < -60) {
+    /* REMOVE */
+    if (pipeX < -100) {
       topPipe.remove();
       bottomPipe.remove();
       clearInterval(movePipe);
@@ -88,11 +123,24 @@ function createPipe() {
   }, 20);
 }
 
+/* ---------------- PIPE TIMER ---------------- */
+setInterval(createPipe, 3000);
+
+/* ---------------- GAME OVER ---------------- */
 function endGame() {
+  if (gameOver) return;
+
   gameOver = true;
-  message.innerHTML = "💀 Game Over<br>Refresh to Restart";
-  message.style.display = "block";
+
+  title.textContent = "☁️ Game Over";
+  subtitle.textContent = `Score: ${score}`;
+
+  startBtn.style.display = "none";
+  restartBtn.style.display = "block";
+  overlay.style.display = "flex";
 }
 
-/* Pipe Interval */
-setInterval(createPipe, 2000);
+/* ---------------- RESTART ---------------- */
+restartBtn.addEventListener("click", () => {
+  location.reload();
+});
