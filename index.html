@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Card Showcase</title>
- accessibility-improvements
+
     <link rel="stylesheet" href="css/projects.css">
-=======
+
     <link rel="stylesheet" href="style.css"> 
- main
+
     <link rel="icon" type="image/png" href="Hall of Fame (1).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -18,7 +18,6 @@
 </head>
 
 <body data-theme="dark">
-
 
     <div class="circle-container">
         <div class="circle"></div>
@@ -57,37 +56,8 @@
     
     <!-- Page Loader -->
 
-
-
     <!-- NAVBAR START -->
-    <nav class="navbar">
-        <div class="nav-logo">🚀 Community</div>
-
-        <!-- Hamburger Icon -->
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contribute.html">Contribute</a></li>
-            <li><a href="https://github.com/Jayanta2004/dev-card-showcase" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="statistics.html">Statistics</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="guidelines.html">Guidelines</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="bug-report.html">Bug Report</a></li>
-            <li><a href="feature-request.html">Feature Request</a></li>
-            <li><a href="analytics.html">Analytics</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-        </ul>
-        <button id="themeToggle" class="theme-toggle">🌙</button>
-    </nav>
+<div id="navbar"></div>
 
     <!-- NAVBAR END -->
 
@@ -952,7 +922,18 @@
             </div>
         </div>
 
-         <div class="card">
+        <div class="card">
+            <div class="card-inner">
+                <img src="images/priyanshigoyal2801.jpg" alt="Priyanshi's Photo" class="card-img">
+                <h2>Priyanshi Goyal</h2>
+                <span class="role">Student Developer</span>
+                <p>"Building intelligent systems where AI meets full stack development."</p>
+                <a href="https://www.linkedin.com/in/priyanshigoyal2101/" class="card-btn" target="_blank">LinkedIn</a>
+                <a href="https://github.com/priyanshigoyal2801" class="card-btn" target="_blank">GitHub</a>
+            </div>
+        </div>
+      
+        <div class="card">
             <div class="card-inner">
                 <img src="images/Anurag-Ghutke.jpg" alt="Anurag Ghutke's Photo" class="card-img">
                 <h2>Anurag Ghutke</h2>
@@ -961,6 +942,7 @@
                 <a href="https://github.com/AnuragGhutke" class="card-btn" target="_blank">GitHub</a>
             </div>
         </div>
+              
 
         <!-- ADD YOUR NEW CARD ABOVE THIS COMMENT -->
 
@@ -1033,9 +1015,6 @@
         </div>
     </div>
 </div>
-
-  
-
 
     <script>
         lucide.createIcons();

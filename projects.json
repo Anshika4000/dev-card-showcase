@@ -1,47 +1,30 @@
 [
     {
-        "title": "Pomodoro Timer",
-        "description": "Customizable productivity timer with work/break intervals, task list integration, and session statistics. Features notifications, progress tracking, long breaks after multiple sessions, and statistics dashboard showing focus time, breaks taken, and streaks.",
+        "title": "Keyboard Drum Kit",
+        "description": "An interactive drum machine where keyboard keys trigger realistic drum sounds using the Web Audio API. Press Q, W, E, R, A, S, D, F keys to play different drum samples including kick, snare, hi-hat, tom, clap, cymbal, percussion, and bass. Features smooth animations, visual feedback, and encourages playful exploration of keyboard input.",
         "tags": [
             "HTML",
             "CSS",
             "JavaScript",
-            "Utility",
-            "Productivity",
-            "Timer",
-            "Task Management"
+            "Web Audio API",
+            "Game",
+            "Music",
+            "Interactive",
+            "Keyboard",
+            "Drums",
+            "Audio"
         ],
         "links": {
-            "live": "./projects/Pomodoro-Timer/"
+            "live": "./projects/Keyboard-Drum-Kit/"
         },
         "author": {
-            "name": "Ayaanshaikh12243",
-            "github": "https://github.com/Ayaanshaikh12243"
+            "name": "Gupta",
+            "github": "https://github.com/Gupta-02"
         }
     },
     {
-        "title": "Password Strength Checker",
-        "description": "Real-time password validator showing strength meter, requirements checklist, and security tips. Features entropy calculation, password generation, and detailed feedback on password security with common weak pattern examples.",
-        "tags": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Utility",
-            "Security",
-            "Validator",
-            "Developer Tool"
-        ],
-        "links": {
-            "live": "./projects/Password-Strength-Checker/"
-        },
-        "author": {
-            "name": "Ayaanshaikh12243",
-            "github": "https://github.com/Ayaanshaikh12243"
-        }
-    },
-    {
-        "title": "Mech Arena Skirmish",
-        "description": "Pilot a mech in compact 3D battle arenas with modular mech combat. Features loadout selection, destructible cover, and cooldown skills for tactical combat in short sessions.",
+        "title": "Parkour Grid",
+        "description": "Time-based parkour challenges in abstract 3D blocks with momentum-based movement, wall-runs, slides, checkpoints, and replay ghosts. Features modular level design and endless mode.",
         "tags": [
             "HTML",
             "CSS",
@@ -50,10 +33,11 @@
             "3D",
             "Three.js",
             "Action",
-            "Strategy"
+            "Parkour",
+            "Physics"
         ],
         "links": {
-            "live": "./projects/Mech-Arena-Skirmish/"
+            "live": "./projects/Parkour-Grid/"
         },
         "author": {
             "name": "Gupta",
@@ -127,6 +111,22 @@
             "github": "https://github.com/omkarhole"
         }
     },
+    {
+        "title": "Dice Probability Simulator",
+        "description": "An interactive simulator that calculates and visualizes the probability outcomes of rolling one or multiple dice. Helps users understand basic probability concepts through simulations and real-time results.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/dice-probability-simulator/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
+        }
+},
   {
         "title": "Digital Energy Meter",
         "description": "A digital energy meter that displays real-time energy consumption and provides controls for managing energy usage. Features include live energy flow visualization, adjustable drain rate, quick charge, pause drain, and reset functions, all within a clean and responsive interface.",
@@ -301,6 +301,23 @@
             "github": "https://github.com/omkarhole"
         }
     },
+    {
+        "title": "Personality Check",
+        "description": "An interactive personality assessment tool with a calm, psychology-inspired UI. Features scenario-based questions, smooth transitions, and clear personality insights, designed with warm, human-centric color tones and a fully responsive layout.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "UI/UX"
+        ],
+        "links": {
+            "live": "./projects/personality-check/"
+        },
+        "author": {
+            "name": "Anvesha",
+            "github": "https://github.com/your-github-username"
+        }
+},
       {
         "title": "Battle of Elements",
         "description": "A simple card game where two players draw cards and the player with the higher card wins the round. The game continues until all cards are played, and the player with the most rounds won is declared the overall winner.",
@@ -1510,6 +1527,22 @@
             "github": "https://github.com/neeru24"
         }
     },
+       {
+        "title": "Chaos PlayGround",
+        "description": "An interactive playground that demonstrates chaos theory concepts through visual simulations and user-controlled parameters.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/Chaos-Engineering/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Carbon Footprint Calculator",
         "description": "A web application that helps users estimate their carbon footprint based on lifestyle choices such as transportation, energy consumption, and diet. Provides tips for reducing environmental impact.",
@@ -1558,6 +1591,54 @@
             "github": "https://github.com/omkarhole"
         }
     },
+       {
+        "title": "Challenge Generator",
+        "description": "A web application that generates random challenges for users to complete, promoting fun and creativity.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/ChallengeGenerator/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
+        "title": "Floating Books Animation",
+        "description": "An interactive animation featuring books that float and respond to user interactions, creating a visually appealing experience.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/FloatingBooks/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+    {
+        "title": "Your Story in Books",
+        "description": "A creative storytelling platform where users can write and visualize their stories in a book format, featuring interactive elements and animations.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/YourStory/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
     {
         "title": "Weather Sculprate Game",
         "description": "An engaging weather-themed game where players sculpt clouds to match given weather conditions. Features multiple levels, scoring, and interactive gameplay.",
@@ -1604,6 +1685,22 @@
         "author": {
             "name": "Neeru",
             "github": "https://github.com/neeru24"
+        }
+    },
+     {
+        "title": "Carbon Choice comparator",
+        "description": "An application that compares the carbon footprints of different lifestyle choices to help users make eco-friendly decisions.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/carbon-choice/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
         }
     },
         {
@@ -1758,6 +1855,22 @@
             "github": "https://github.com/neeru24"
         }
     },
+      {
+        "title": "Budget Planner",
+        "description": "A user-friendly budget planning tool that helps users track income and expenses, set financial goals, and visualize spending patterns with charts and graphs.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/Budget-Planner/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Hangman Game",
         "description": "A classic Hangman game where players guess letters to reveal a hidden word before running out of attempts. Features multiple categories, hints, and a scoring system.",
@@ -1800,6 +1913,22 @@
         ],
         "links": {
             "live": "./projects/Simple-dashboard/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+      {
+        "title": "Tower Of Hanoi",
+        "description": "A classic Tower of Hanoi puzzle game where players move disks between pegs following specific rules to achieve the goal state. Features visual representation and move counter.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/tower-of-hanoi/index.html"
         },
         "author": {
             "name": "Omkar",
@@ -6700,6 +6829,26 @@
     }
 },
 
+{
+  "title": "Luxury To-Do List",
+  "description": "A minimal yet luxurious to-do list application featuring a glassmorphism UI, dark and light modes, and persistent task storage using localStorage.",
+  "tags": [
+    "javascript",
+    "html",
+    "css",
+    "todo",
+    "productivity",
+    "utility"
+  ],
+  "links": {
+    "live": "/projects/todo-list/index.html"
+  },
+  "author": {
+    "name": "YOUR_NAME_HERE",
+    "github": "https://github.com/YOUR_GITHUB_USERNAME"
+  }
+},
+
   {
     "title": "Retro Terminal Website",
     "description": "A website that mimics an old computer terminal interface with command-based navigation. Features typing animation, green-on-black terminal UI, and interactive commands like help, about, and projects.",
@@ -6753,6 +6902,116 @@
     },
     "author": {
       "name": "Gupta-02",
+      "github": "https://github.com/Gupta-02"
+    }
+  },
+  {
+    "title": "Castle Breach Simulator",
+    "description": "Destroy castle walls with siege weapons. Features destructible environments, physics-based destruction, and structural weak points.",
+    "tags": ["HTML", "CSS", "JavaScript", "Game", "Physics", "Destruction", "Simulation"],
+    "links": {
+      "live": "castle-breach-simulator.html"
+    },
+    "author": {
+      "name": "Gupta-02",
+      "github": "https://github.com/Gupta-02"
+    }
+  },
+  {
+    "title": "Robo Factory Escape",
+    "description": "Escape a robot assembly line before completion. Features conveyor-based level design, timing jumps, and disabling machines.",
+    "tags": ["HTML", "CSS", "JavaScript", "Game", "Platformer", "Puzzle", "Action"],
+    "links": {
+      "live": "./projects/Robo-Factory-Escape/"
+    },
+    "author": {
+      "name": "Gupta-02",
+      "github": "https://github.com/Gupta-02"
+    }
+  },
+  {
+    "title": "Heart Rate Monitor UI",
+    "description": "UI for tracking real-time and historical heart rate data with BPM input, resting vs active charts, and configurable alert thresholds.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Utility",
+      "Health",
+      "Dashboard",
+      "Charts"
+    ],
+    "links": {
+      "live": "./projects/Heart-Rate-Monitor-UI/"
+    },
+    "author": {
+      "name": "Gupta-02",
+      "github": "https://github.com/Gupta-02"
+///
+    }
+  },
+  {
+    "title": "Cassette Tape Music Player",
+    "description": "A retro cassette tape-style music player UI with play/pause controls, rotating tape animation, and progress bar styled as cassette reels. Inspired by old Walkman cassette players.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Music Player",
+      "Retro",
+      "Animation",
+      "UI/UX"
+    ],
+    "links": {
+      "live": "./projects/Cassette-Tape-Music-Player/"
+    },
+    "author": {
+      "name": "Sneha-Amballa",
+      "github": "https://github.com/Sneha-Amballa"
+    }
+  },
+  {
+    "title": "Keyboard Drum Kit",
+    "description": "An interactive drum machine where keyboard keys trigger drum sounds using the Web Audio API. Press Q, W, E, R, A, S, D, F keys to play different drum samples. Features auto-play patterns, tempo control, and visual step sequencer.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Web Audio API",
+      "Game",
+      "Music",
+      "Interactive",
+      "Keyboard",
+      "Drums"
+    ],
+    "links": {
+      "live": "./projects/drumsjs/"
+    },
+    "author": {
+      "name": "Gupta",
+      "github": "https://github.com/Gupta-02"
+    }
+  },
+  {
+    "title": "Monster Hunter - Mini Mario Game",
+    "description": "A platformer game featuring Mario-style gameplay with monster hunting elements. Jump between platforms, collect coins, defeat monsters with projectiles, and avoid deadly spikes. Features multiple levels with increasing difficulty, score tracking, and lives system.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Game",
+      "Platformer",
+      "Mario",
+      "Monster Hunter",
+      "Canvas",
+      "2D Game",
+      "Physics"
+    ],
+    "links": {
+      "live": "./projects/monster-hunter/"
+    },
+    "author": {
+      "name": "Gupta",
       "github": "https://github.com/Gupta-02"
     }
   }
